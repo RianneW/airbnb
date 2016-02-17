@@ -6,6 +6,10 @@
 # compass_config do |config|
 #   config.output_style = :compact
 # end
+data.flats.each do |name|
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
+end
+
 
 # Auto-prefixing of CSS code with vendor prefix
 activate :autoprefixer
