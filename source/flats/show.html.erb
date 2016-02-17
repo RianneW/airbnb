@@ -1,3 +1,118 @@
-<% flat = data.flats[owner] %>
-<h1>hello <%= owner %><h1>
+---
+title: Airbnb flat
+---
 
+<!-- Read from data.flats with owner key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<!-- <div class="banner-flats">
+  <%= image_tag flat.picture %>
+</div>
+-->
+
+<!-- banner -->
+
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path flat.picture %>'); height: 50vh; background-position: center;"></div>
+
+<!-- header flat -->
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+        <div class="header-flat-details">
+          <div class="header-flat-owner text-center">
+            <%= image_tag flat.owner_picture, class: "avatar-medium" %>
+            <p><%= flat.first_name %></p>
+          </div>
+          <div class="header-flat-name">
+            <h1><%= flat.summary %></h1>
+            <p><%= flat.city %></p>
+            <% flat.rating.times do %>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <% end %>
+            <% (5 - flat.rating).times do %>
+            <i class="fa fa-star-o" style="color: $gray-light"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <form action="#">
+          <h4>Book this flat</h4>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="checkin">
+              </div>
+              <div class="col-xs-6">
+                <input type="text" class="form-control" placeholder="checkout">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+            </select>
+          </div>
+          <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- detailed infos flat -->
+
+<div class="details-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h1>About this flat</h1>
+        <p><%= flat.description %></p>
+        <hr>
+        <div class="row flat-data">
+          <div class="col-xs-12 col-sm-2">The Space</div>
+          <div class="col-xs-12 col-sm-4">
+            <ul>
+              <li>Accomodates:   <strong><%= flat.accommodates %></strong></li>
+              <li>Bathrooms:   <strong><%= flat.bathrooms %></strong></li>
+              <li>Bed types:   <strong><%= flat.bedtype %></strong></li>
+              <li>Bedrooms:   <strong><%= flat.bedrooms %></strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul>
+              <li>Beds:   <strong><%= flat.beds %></strong></li>
+              <li>Property type:   <strong><%= flat.property_type %></strong></li>
+              <li>Room type:   <strong><%= flat.room_type %></strong></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row flat-data">
+          <div class="col-xs-12 col-sm-2">Amenities</div>
+          <div class="col-xs-12 col-sm-4">
+            <!-- some different syntax -->
+            <!-- <ul>
+              <li>Accomodates:   <strong><%= flat.accommodates %></strong></li>
+              <li>Bathrooms:   <strong><%= flat.bathrooms %></strong></li>
+              <li>Bed types:   <strong><%= flat.bedtype %></strong></li>
+              <li>Bedrooms:   <strong><%= flat.bedrooms %></strong></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul>
+              <li>Beds:   <strong><%= flat.beds %></strong></li>
+              <li>Property type:   <strong><%= flat.property_type %></strong></li>
+              <li>Room type:   <strong><%= flat.room_type %></strong></li>
+            </ul> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

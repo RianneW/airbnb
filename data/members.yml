@@ -1,4 +1,9 @@
-sebastian:
-  city: Paris
-  picture_member: seb.jpeg
-
+koos:
+  name: Koos
+  image: anne.jpg
+seb:
+  name: Seb
+  image: seb.jpg
+romain:
+  name: Romain
+  image: romain.jpeg

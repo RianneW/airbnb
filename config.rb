@@ -6,7 +6,8 @@
 # compass_config do |config|
 #   config.output_style = :compact
 # end
-data.flats.each do |name|
+
+data.flats.each do |name, value|
   proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
 end
 

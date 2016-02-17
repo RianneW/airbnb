@@ -1,33 +1,73 @@
 seb:
   owner_name: Sebastien Saunier
-  picture: http://placehold.it/150x150
-  owner_picture: http://placehold.it/150x150
+  first_name: Seb
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
   name: Seb's home
   summary: Charming room in Montmartre
+  description: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
   city: Paris, France
+  accommodates: 2
+  bathrooms: 1
+  bedtype: Real Bed
+  bedrooms: 1
+  beds: 1
+  property_type: apartment
+  room_type: "entire home/apt"
+  rating: 3
   wifi: true
 romain:
   owner_name: Romain Paillard
-  picture: http://placehold.it/150x150
-  owner_picture: http://placehold.it/150x150
+  first_name: Romain
+  picture: card-london.jpeg
+  owner_picture: romain.jpeg
   name: Romain's home
   summary: Nice flat in Piccadilly
+  description: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
   city: London, UK
+  accommodates: 4
+  bathrooms: 1
+  bedtype: Real Bed
+  bedrooms: 1
+  beds: 1
+  property_type: studio
+  room_type: "entire home/apt"
+  rating: 4
   wifi: false
 anne:
   owner_name: Anne Collet
-  picture: http://placehold.it/150x150
-  owner_picture: http://placehold.it/150x150
+  first_name: Anne
+  picture: card-brussels.jpeg
+  owner_picture: anne.jpg
   name: Anne's home
   summary: Lovely flat
+  description: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
   city: Brussels, Belgium
+  accommodates: 4
+  bathrooms: 1
+  bedtype: Real Bed
+  bedrooms: 1
+  beds: 2
+  property_type: studio
+  room_type: "entire home/apt"
+  rating: 2
   wifi: false
 rianne:
   owner_name: Rianne Westgeest
-  picture: http://placehold.it/150x150
-  owner_picture: http://placehold.it/150x150
+  first_name: Rianne
+  picture: card-background2.png
+  owner_picture: profielfoto.jpg
   name: Rianne's home
-  summary: Spacious appartment close to Amsterdam
+  summary: Spacious apartment close to Amsterdam
+  description: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
   city: Amsterdam, UK
+  accommodates: 2
+  bathrooms: 1
+  bedtype: Real Bed
+  bedrooms: 1
+  beds: 1
+  property_type: apartment
+  room_type: "entire home/apt"
+  rating: 5
   wifi: true
 
